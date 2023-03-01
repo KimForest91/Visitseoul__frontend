@@ -9,39 +9,55 @@
     <meta name="description" content="다양한 서울 여행 정보를 만나보세요. 서울의 명소, 맛집, 카페, 호텔, 축제, 공연, 에디터 추천 여행 등 서울의 놀거리. 교통, 가이드북, 지도 등 여행 시 필요한 유용한 서울관광정보를 서울관광재단 Visit Seoul이 제공합니다." />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fa/css/all.min.css" />
     <link rel="stylesheet" href="css/web-font.css" />
-    <link rel="stylesheet" href="css/style-pc.css" media="screen and (min-width: 770.0px)" />
-    <link rel="stylesheet" href="css/style-m.css" media="screen and (max-width: 769.9px)" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style-pc.css" media="screen and (min-width: 1200.0px)" />
+    <link rel="stylesheet" href="css/style-m.css" media="screen and (max-width: 1199.9px)" />
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/main.js"></script>
   </head>
 
-  <body class="main">
+  <body id="index" class="main">
     <div id="wrapper">
-      <img alt="Hangang River in Seoul" src="./img/index/getImage.jfif" />
-      <p class="logo_sub">
-        <img alt="" src="./img/index/icn_vs_logo@2x.png" />
-        <img alt="" src="./img/index/icn_myseoul_logo@2x.png" />
-      </p>
-      <div class="index_left">
-        <h1><img alt="Welcome to Seoul VISIT SEOUL" src="./img/index/img_intro_title@2x.png" /></h1>
-        <div class="time"></div>
-        <div class="weather"></div>
-      </div>
-      <div class="index_right">
-        <ul>
-          <li><a href="#">한국어</a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">日本語</a></li>
-          <li><a href="#">简体中文</a></li>
-          <li><a href="#">繁體中文</a></li>
-          <li><a href="#">русский<br>язык</a></li>
-          <li><a href="#">Malay</a></li>
-          <li><a href="#">Partners</a></li>
-        </ul>
-        <span class="img_title">Hangang River in Seoul</span>
+      <a href="#index_lang" id="skip-nav">본문 바로가기</a>
+      <img class="index_bg" alt="Hangang River in Seoul" src="./img/index/getImage.jfif" />
+      <div class="container">
+        <p class="logo_sub">
+          <img alt="" src="./img/index/icn_vs_logo@2x.png" />
+          <img alt="" src="./img/index/icn_myseoul_logo@2x.png" />
+        </p>
+        <div class="index_info">
+          <h2><img alt="Welcome to Seoul VISIT SEOUL" src="./img/index/img_intro_title@2x.png" /></h2>
+          <div class="info_box">
+            <div class="time_box eng">
+              <span class="ampm">PM</span><span class="time">03:41</span>
+            </div>
+            <div class="weather_box eng">
+              <span class="location">SEOUL</span>
+              <div class="weather">
+                <img alt="날씨" src="./img/index/icn_weather_littleCloudy@2x.png" /><em>8.6°</em>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="index_lang">
+          <ul class="lang_list">
+            <li><a href="./page/00_main.html" title="비짓서울 한국어 사이트로 이동">한국어</a></li>
+            <li><a href="#" title="비짓서울 English 사이트로 이동">English</a></li>
+            <li><a href="#" title="비짓서울 日本語 사이트로 이동">日本語</a></li>
+            <li><a href="#" title="비짓서울 简体中文 사이트로 이동">简体中文</a></li>
+            <li><a href="#" title="비짓서울 繁體中文 사이트로 이동">繁體中文</a></li>
+            <li><a href="#" title="비짓서울 русский язык 사이트로 이동">русский<br>язык</a></li>
+            <li><a href="#" title="비짓서울 Malay 사이트로 이동">Malay</a></li>
+            <li><a href="#" title="비짓서울 Partners 사이트로 이동">Partners</a></li>
+          </ul>
+          <span class="img_title">Hangang River in Seoul</span>
+        </div>
       </div>
     </div>
 

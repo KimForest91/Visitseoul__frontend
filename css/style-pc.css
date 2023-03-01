@@ -7,11 +7,56 @@ br.only-m {content: '';}
 br.only-m::after {content: '\00a0';}
 
 body {font-family: 'NotoSansKR', sans-serif, serif; font-size: 14px; color: #333333; background: #ffffff;}
-#wrapper {min-width: 770px; overflow: hidden;}
+#wrapper {min-width: 1200px; overflow: hidden;}
 #skip-nav {position: fixed; left:0; top: -40px; width: 100%; line-height: 40px; text-align: center; background-color: rgba(0, 0, 0, 0.8); color: #ffffff; font-size: 16px; transition: top 0.3s; z-index: 100000;}
 #skip-nav:focus {top: 0;}
 
 
+/* index 페이지 */
+#index {}
+#index > #wrapper {width: 100vw; height: 100vh;}
+#index > #wrapper > div.container {position: absolute; padding: 40px; width: 100%; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%); overflow: hidden;}
+#index .index_bg {position: absolute; object-fit: cover; height: 100%; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#index p.logo_sub {position: relative; top: 0; height: 22px; text-align: right;}
+#index p.logo_sub > img {display: inline-block; height: 18px;}
+#index p.logo_sub > img + img {height: 28px; margin-left: 30px; vertical-align: top;}
+#index div.index_info {height: 250px; margin-top: 30px;}
+#index div.index_info > h2 {float: left;}
+#index div.index_info > h2 > img {width: 821px;}
+#index div.index_info > div.info_box {float: right; margin-right: 20px;}
+div.time_box {position: relative; height: 160px; width: 335px; color: #ffffff;}
+div.time_box::after {content: ''; position: absolute; width: 100%; height: calc(100% + 20px); border-bottom: 1px solid #ffffff;}
+div.time_box > span {position: absolute; bottom: 0}
+div.time_box > span.ampm {font-size: 30px; left: 0;}
+div.time_box > span.time {font-size: 120px; left: 45px; line-height: 100px;}
+div.weather_box {position: relative; width: 100%; margin-top: 50px; color: #ffffff; overflow: hidden;}
+div.weather_box > span.location {position: absolute; left: 35%; bottom: 10px; font-size: 18px;}
+div.weather_box > span.location::before {content: ''; position: absolute; width: 20px; height: 20px; left: -45%; background: url(./../img/index/icn_placehold@2x.png) center top -2px no-repeat; background-size: 140%;}
+div.weather_box > div.weather {position: relative; float: right; height: 60px;}
+div.weather_box > div.weather > em {font-size: 40px;}
+div.weather_box > div.weather > img {position: relative; height: 100%; margin-right: 10px; vertical-align: bottom;}
+
+#index_lang {position: absolute; bottom: 50px; font-size: 22px; font-weight: 500; color: #ffffff;}
+ul.lang_list {}
+ul.lang_list > li {float: left; width: 141px; height: 141px; margin: 15px; border-radius: 200px; background-color: rgba(0, 0, 0, 0.5); overflow: hidden; transition: all 0.4s;}
+ul.lang_list > li:hover {transform: scale(1.1); background-color: #ffffff; color: #007DC3;}
+ul.lang_list > li:nth-child(5) {clear: left;}
+ul.lang_list > li > a {display: block; height: 100%; text-align: center; line-height: 140px;}
+span.img_title {position: absolute; bottom: 0; width: 100%; text-align: right; font-size: 18px; font-weight: 400;}
+span.img_title::after {content: ''; position: absolute; width: 30px; height: 20px; left: calc(100% + 10px); background: url(./../img/index/icn_panorama@2x.png) center center no-repeat; background-size: 80%;}
+
+
+
+/* common */
+#header {}
+#header > div.header_top {}
+#header > div.header_bottom {}
+
+#main {}
+
+#footer {}
+
+/* main 페이지 */
 
 
 
@@ -27,6 +72,37 @@ body {font-family: 'NotoSansKR', sans-serif, serif; font-size: 14px; color: #333
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* module */
+.eng {font-family: 'Roboto';}
 
 
 
