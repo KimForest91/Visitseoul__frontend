@@ -48,9 +48,66 @@ span.img_title::after {content: ''; position: absolute; width: 30px; height: 20p
 
 
 /* common */
-#header {}
-#header > div.header_top {}
-#header > div.header_bottom {}
+#header {position: fixed; width: 100%; height: 129px;}
+#header > div.header_top {width: 100%; height: 60px; padding: 15px 70px 0; background-color: #ffffff; z-index: 1000000;}
+#header > div.header_top > h1 {position: relative; width: 234px; height: 40px; background: url(./../img/main/ico_logo@2x.png) center center no-repeat; background-size: 100%; float: left;}
+#header > div.header_top > h1 > a {position: absolute; display: block; text-indent: -9999px;}
+#header > div.header_top > div.header_box {float: right;}
+div.header_box > form {position: relative; float: left; padding-right: 100px;}
+div.header_box > form div.search_list {position: absolute; right: 110px; margin-top: 20px; width: 420px; padding: 30px 30px 10px 30px; box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px; background-color: #ffffff; border-radius: 3px; z-index: 10000; display: none; overflow: hidden;}
+div.header_box > form div.search_list.on {display: block;}
+div.header_box > form div.search_list > a {position: absolute; right: 30px; width: 20px; height: 20px; text-indent: -9999px; background: url(./../img/icn_search_close@2x.png) center center no-repeat; background-size: 100%;}
+div.header_box > form div.search_list > p {font-size: 20px; font-weight: 600;}
+div.header_box > form div.search_list > ul {float: left; margin-top: 20px; width: 50%;}
+
+div.search_list > ul > li {font-size: 16px; margin-bottom: 25px;}
+div.search_list > ul > li > span {display: inline-block; width: 30px; height: 30px; margin-right: 15px; border-radius: 5px; background-color: #333333; color: #ffffff; line-height: 30px; font-weight: 600; text-align: center;}
+ul.one_to_five {}
+ul.six_to_ten {}
+
+div.header_box label {}
+
+input#search_keyword {width: 257px; height: 45px; border: 1px solid #efefef; background-color: #fbfbfb; border-radius: 3px; font-size: 16px; font-weight: 400; padding: 9px 20px 10px;}
+div.header_box a.search_icon {display: inline-block; position: absolute; text-indent: -9999px; width: 45px; height: 45px; background: url(./../img/main/ico-search-gray@2x.png) center center no-repeat; background-size: 50%;}
+
+div.header_box > div {position: relative; float: left;}
+div.header_box > div > ul {position: absolute; width: 220px; padding: 10px; margin-top: 20px; border: 1px solid #ebebeb; background-color: #ffffff; display: none;}
+div.header_box > div.on > ul {display: block;}
+div.header_box > div > ul > li {padding: 10px; margin-bottom: 3px; border-radius: 2px; font-size: 16px; font-weight: 300; background-color: #f6f6f6;}
+div.header_box > div > ul > li > a {display: block;}
+div.header_box > div > ul > li:hover {width: 100%; height: 100%; background-color: #333333; color: #ffffff;}
+div.header_box > div > ul > li > a > span {padding-left: 5px; color: #0090e2;}
+div.header_box > div > a {position: relative; display: inline-block; line-height: 45px; color: #727272; font-size: 20px; padding-right: 30px;}
+div.header_box > div.on > a > i {transform: rotate(-180deg); top: 20%;}
+div.header_box > div > a > i {position: absolute; right: 0; top: 30%;}
+div.header_box > div.weather {margin-right: 70px;}
+div.header_box > div.weather > img {width: 40px; height: 40px;}
+div.header_box > div.weather > em {position: relative; top: 5px; padding-left: 10px; vertical-align: text-bottom; font-size: 16px; font-weight: 500;}
+div.header_box > div.family_site {margin-right: 30px;}
+
+div.header_box > div.family_site > ul {}
+div.header_box > div.lang {}
+div.header_box > div.lang > ul {right: 0;}
+
+
+#header > div.header_bottom {width: 100%; height: 70px; border-bottom: 1px solid #ebebeb; background-color: #ffffff;}
+#header > div.header_bottom > nav {}
+#gnb {text-align: center;}
+#gnb > li {display: inline-block;}
+#gnb > li > a {position: relative; display: block; padding: 20px 25px; font-size: 20px; font-weight: 500;}
+#gnb > li.on > a::after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 4px; background-color: #0090e2;}
+#gnb > li.on > div {height: 500px; padding: 50px; background-color: #ffffff;}
+#gnb > li.on > div::after {content: ''; position: fixed; bottom: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.8); z-index: -1;} 
+#gnb > li > div {position: absolute; height: 0; width: 100%; left: 0; display: flex; justify-content: center; overflow: hidden; background-color: #ffffff;}
+#gnb > li > div > p {width: 250px; text-align: left; font-size: 16px; font-weight: 400;}
+#gnb > li > div > p > em {display: block; margin-bottom: 10px; font-size: 42px; font-weight: 700;}
+#gnb > li > div > ul {width: 800px; padding-left: 20px;}
+#gnb > li > div > ul > li {margin-bottom: 15px; font-size: 20px; text-align: left;}
+
+
+aside {display: none;}
+
+
 
 #main {}
 
